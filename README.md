@@ -20,24 +20,4 @@ addNewRow.SetField(3, gridDataTable.Rows[0][3]);
 addNewRow.SetField(4, gridDataTable.Rows[0][4]);
 
 ```
-
-```
-Dim gridDataTable As DataTable = TryCast(Me.sfDataGrid.DataSource, DataTable)
-If gridDataTable Is Nothing OrElse Me.sfDataGrid.View Is Nothing Then
-	Return
-End If
-
-' Creates a new row.
-Dim addNewRow As System.Data.DataRow = TryCast(sfDataGrid.View.AddNew(), System.Data.DataRow)
-
-' Commits the newly created row.
-sfDataGrid.View.CommitNew()
-
-' Initialize the values of first row to the newly added row.
-addNewRow.SetField(0, gridDataTable.Rows(0)(0))
-addNewRow.SetField(1, gridDataTable.Rows(0)(1))
-addNewRow.SetField(2, gridDataTable.Rows(0)(2))
-addNewRow.SetField(3, gridDataTable.Rows(0)(3))
-addNewRow.SetField(4, gridDataTable.Rows(0)(4))
-
 ```
