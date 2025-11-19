@@ -1,6 +1,8 @@
-# How to add a new row in WinForms DataGrid when DataGrid bound to datatable?
+# How to Add a New Row in WinForms DataGrid When DataGrid Bound to DataTable?
 
-You can add the new row programmatically from a `DataTable` to the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls) (SfDataGrid) by creating a new row in the [SfDataGrid.View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) and set required value for that row.
+This sample illustrates how to add a new row when [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) bound to DataTable.
+
+You can add the new row programmatically from a `DataTable` to the `DataGrid` by creating a new row in the [SfDataGrid.View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) and set required value for that row.
 
 ``` csharp
 DataTable gridDataTable = this.sfDataGrid.DataSource as DataTable;
